@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BRIOSAM | Samuel Omae</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<header>
+    <nav class="navbar">
+
+        <a href="#home" class="logo">
+            BRIO<span>SAM.</span>
+        </a>
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <a href="#contact" class="nav-btn">Let's Talk</a>
+
+    </nav>
+</header>
+
+
+<!-- HOME / HERO SECTION -->
+<section class="banner-section" id="home">
+
+    <img
+        src="{{ url_for('static', filename='images/briosam-banner.png') }}"
+        alt="BRIOSAM Studios"
+        class="main-banner"
+    >
+
+    <div class="hero-content">
+
+        <p class="welcome">WELCOME TO MY DIGITAL SPACE</p>
+
+        <h1>
+            Hi, I'm <span>Samuel Omae.</span>
+        </h1>
+
+        <h2>Software Developer & Educator</h2>
+
+        <p class="description">
+            I build digital solutions, explore technology
+            and create meaningful experiences through
+            software development and education.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#projects" class="primary-btn">
+                Explore My Work
+            </a>
+
+            <a href="#contact" class="secondary-btn">
+                Contact Me
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ABOUT SECTION -->
+<section class="about" id="about">
+
+    <div class="section-heading">
+
+        <p class="subtitle">GET TO KNOW ME</p>
+
+        <h2>About <span>BRIOSAM</span></h2>
+
+    </div>
+
+    <div class="about-content">
+
+        <div class="about-text">
+
+            <h3>Hello, I'm Samuel Omae.</h3>
+
+            <p>
+                I am a technology enthusiast, aspiring software developer
+                and educator currently pursuing a Bachelor of Education
+                Science in Mathematics and Physics at Masinde Muliro
+                University of Science and Technology.
+            </p>
+
+            <p>
+                My interests revolve around software development,
+                web technologies, education and digital innovation.
+                I enjoy transforming ideas into practical solutions
+                that address real-world challenges.
+            </p>
+
+            <p>
+                Through BRIOSAM, I aim to connect technology,
+                creativity, learning and opportunities to make
+                a meaningful impact.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#contact" class="primary-btn">
+                    Let's Collaborate
+                </a>
+
+                <a href="{{ url_for('static', filename='documents/Samuel_Omae_CV.pdf') }}"
+                   class="secondary-btn"
+                   download>
+                    Download My CV ↓
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="about-details">
+
+            <div class="detail-card">
+                <h4>Education</h4>
+                <p>Bachelor of Education Science</p>
+            </div>
+
+            <div class="detail-card">
+                <h4>Specialization</h4>
+                <p>Mathematics & Physics</p>
+            </div>
+
+            <div class="detail-card">
+                <h4>Technology</h4>
+                <p>Software & Web Development</p>
+            </div>
+
+            <div class="detail-card">
+                <h4>Brand</h4>
+                <p>BRIOSAM Studios</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- SKILLS SECTION -->
+<section class="skills" id="skills">
+
+    <div class="section-heading">
+
+        <p class="subtitle">WHAT I CAN DO</p>
+
+        <h2>My Technical <span>Expertise</span></h2>
+
+        <p class="section-description">
+            Technologies and disciplines I work with as I build my
+            professional journey.
+        </p>
+
+    </div>
+
+    <div class="skills-container">
+
+        <div class="skill-card">
+            <div class="skill-icon">🐍</div>
+            <h3>Python</h3>
+            <p>Programming and application development.</p>
+            <span class="skill-status">Currently Developing</span>
+        </div>
+
+        <div class="skill-card">
+            <div class="skill-icon">🌐</div>
+            <h3>HTML & CSS</h3>
+            <p>Building and styling responsive websites.</p>
+            <span class="skill-status">Learning & Practising</span>
+        </div>
+
+        <div class="skill-card">
+            <div class="skill-icon">⚡</div>
+            <h3>JavaScript</h3>
+            <p>Interactive web experiences.</p>
+            <span class="skill-status">Learning</span>
+        </div>
+
+        <div class="skill-card">
+            <div class="skill-icon">🔥</div>
+            <h3>Flask</h3>
+            <p>Python-based web application development.</p>
+            <span class="skill-status">Learning & Practising</span>
+        </div>
+
+        <div class="skill-card">
+            <div class="skill-icon">🗄️</div>
+            <h3>MySQL</h3>
+            <p>Database design and management.</p>
+            <span class="skill-status">Learning & Practising</span>
+        </div>
+
+        <div class="skill-card">
+            <div class="skill-icon">📐</div>
+            <h3>Mathematics</h3>
+            <p>Mathematical analysis and problem solving.</p>
+            <span class="skill-status">Academic Specialization</span>
+        </div>
+
+        <div class="skill-card">
+            <div class="skill-icon">⚛️</div>
+            <h3>Physics</h3>
+            <p>Scientific reasoning and analytical thinking.</p>
+            <span class="skill-status">Academic Specialization</span>
+        </div>
+
+        <div class="skill-card">
+            <div class="skill-icon">💻</div>
+            <h3>Web Development</h3>
+            <p>Developing practical digital solutions.</p>
+            <span class="skill-status">Building Projects</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- PROJECTS SECTION -->
+<section class="projects" id="projects">
+
+    <div class="section-heading">
+
+        <p class="subtitle">MY RECENT WORK</p>
+
+        <h2>Featured <span>Projects</span></h2>
+
+        <p class="section-description">
+            Exploring technology through practical projects
+            and innovative solutions.
+        </p>
+
+    </div>
+
+    <div class="projects-container">
+
+        <div class="project-card">
+
+            <div class="project-number">01</div>
+
+            <h3>BRIOSAM Online Opportunity Platform</h3>
+
+            <p>
+                A web-based platform designed to connect users
+                with valuable opportunities, resources and
+                possibilities for personal growth.
+            </p>
+
+            <div class="project-tags">
+                <span>Python</span>
+                <span>Flask</span>
+                <span>MySQL</span>
+            </div>
+
+            <a href="https://github.com/BriosamKe"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="project-link">
+                 Visit My GitHub →
+            </a>
+            <a href="#" class="project-link">
+                Source Code Coming Soon →
+            </a>
+
+        </div>
+
+        <div class="project-card">
+
+            <div class="project-number">02</div>
+
+            <h3>Student Management System</h3>
+
+            <p>
+                An educational application designed to organize
+                student information and simplify school
+                administration.
+            </p>
+
+            <div class="project-tags">
+                <span>Python</span>
+                <span>Database</span>
+                <span>GUI</span>
+            </div>
+
+            <a href="#" class="project-link">
+                Source Code Coming Soon →
+            </a>
+
+        </div>
+
+        <div class="project-card">
+
+            <div class="project-number">03</div>
+
+            <h3>School Timetable System</h3>
+
+            <p>
+                A timetable management application designed
+                to help schools organize classes and learning
+                schedules efficiently.
+            </p>
+
+            <div class="project-tags">
+                <span>Python</span>
+                <span>Education</span>
+                <span>Automation</span>
+            </div>
+
+            <a href="#" class="project-link">
+                Source Code Coming Soon →
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- EDUCATION & EXPERIENCE SECTION -->
+<section id="education">
+
+    <h2>Education & Experience</h2>
+
+    <p class="section-intro">
+        My academic journey and practical experience.
+    </p>
+
+    <div class="education-container">
+
+        <div class="education-card">
+
+            <h3>Education</h3>
+
+            <h4>
+                Masinde Muliro University of Science and Technology
+            </h4>
+
+            <p>
+                <strong>Programme:</strong>
+                Bachelor of Education Science
+            </p>
+
+            <p>
+                <strong>Specialization:</strong>
+                Mathematics and Physics
+            </p>
+
+            <p>
+                <strong>Expected Graduation:</strong>
+                December 2027
+            </p>
+
+        </div>
+
+        <div class="education-card">
+
+            <h3>Teaching Experience</h3>
+
+            <h4>Nyabisia Senior School</h4>
+
+            <p>
+                <strong>Role:</strong>
+                Teaching Practice Student
+            </p>
+
+            <p>
+                <strong>Period:</strong>
+                May – August 2026
+            </p>
+
+            <p>
+                Gained practical classroom experience in teaching,
+                lesson preparation, classroom management and
+                learner assessment.
+            </p>
+
+        </div>
+
+        <div class="education-card">
+
+            <h3>Music & Piano</h3>
+
+            <h4>Pianist | Church Music Ministry</h4>
+
+            <p>
+                Experienced in playing keyboard for congregational
+                worship and church music presentations.
+            </p>
+
+            <p>
+                Passionate about piano performance, hymn accompaniment,
+                musical creativity and using music to inspire others.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CERTIFICATES & ACHIEVEMENTS -->
+<section id="certificates">
+
+    <h2>Certificates & Achievements</h2>
+
+    <p class="section-intro">
+        Continuous learning, professional development and achievements.
+    </p>
+
+    <div class="education-container">
+
+        <div class="education-card">
+
+            <h3>Python Programming</h3>
+
+            <p>
+                Developing programming skills using Python
+                through practical projects and independent learning.
+            </p>
+
+        </div>
+
+        <div class="education-card">
+
+            <h3>Web Development</h3>
+
+            <p>
+                Building practical skills in HTML, CSS,
+                JavaScript and Flask.
+            </p>
+
+        </div>
+
+        <div class="education-card">
+
+            <h3>Computer Science</h3>
+
+            <p>
+                Continuing professional development in
+                computer science and software development.
+            </p>
+
+        </div>
+
+        <div class="education-card">
+
+            <h3>Academic Achievement</h3>
+
+            <p>
+                Bachelor of Education Science student specializing
+                in Mathematics and Physics at MMUST.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CONTACT SECTION -->
+<section id="contact">
+
+    <h2>Let's Connect</h2>
+
+    <p class="section-intro">
+        Have a project, opportunity or collaboration in mind?
+        I'd love to hear from you.
+    </p>
+
+    <div class="education-container">
+
+        <div class="education-card">
+
+            <h3>Email Me</h3>
+
+            <p>
+                Reach out for professional opportunities
+                and collaborations.
+            </p>
+
+            <a href="mailto:omaesamuel8@gmail.com" class="btn">
+                Send Email
+            </a>
+
+        </div>
+
+        <div class="education-card">
+
+            <h3>GitHub</h3>
+
+            <p>
+                Explore my programming journey and software projects.
+            </p>
+
+            <a href="https://github.com/BriosamKe"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="btn">
+                Visit GitHub
+            </a>
+
+        </div>
+
+        <div class="education-card">
+
+            <h3>LinkedIn</h3>
+
+            <p>
+                Connect with me professionally.
+            </p>
+
+            <a href="https://www.linkedin.com/in/samuelomae/"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="btn">
+                Connect on LinkedIn
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+
+    <p>
+        © 2026 BRIOSAM | Samuel Omae. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+</html>
